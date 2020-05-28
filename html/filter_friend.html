@@ -1,0 +1,86 @@
+<section class="animated fadeIn" id="filer-friend-interaction" style="padding: 24px 12px 0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="filter-friend-time">
+                    <div class="option_filter_friend">
+                        <div class="form-group">
+                            <h5 class="font-16 text-white font-gg">Thiết lập lọc bạn bè</h5>
+                            <p class="font-gg text-justify font-12 mb-0">
+                                Tool hỗ trợ lọc bạn bè không tương tác. Hủy bạn bè hàng loạt giúp bạn tiết kiệm thời
+                                gian.
+                            </p>
+                        </div>
+                        <div class="form-group mb-0 filter-friend">
+                            <label class="font-14 font-gg" for="">Chọn loại bạn bè bạn
+                                muốn
+                                lọc:</label>
+                            <div>
+                                <input id="is_not_reaction" class="ml-1 is-option" type="checkbox"
+                                    style="margin-bottom: -4px;"> <span class="font-gg ml-1 font-14">Bạn
+                                    bè không bao giờ tương tác</span>
+                            </div>
+                            <div class="mt-1">
+                                <input id="is_not_avatar" class="ml-1 is-option" type="checkbox"
+                                    style="margin-bottom: -4px;"> <span class="font-gg ml-1 font-14">Bạn
+                                    bè không có avatar</span>
+                            </div>
+
+                            <div class="form-group mb-0 mt-4">
+                                <button id="start_filter" type="button"
+                                    class="btn m-auto font-gg font-14 shadow-none btn-primary">Lọc
+                                    bạn
+                                    bè</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="loading-unfriend d-none">
+                        <div class="form-group">
+                            <span class="font-gg mr-2 font-16">Đang xóa...</span>
+                        </div>
+                        <div class="form-group kq">
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="note form-group mt-3 font-12 p-2">
+                    <span class="font-gg" style="color:#FFBF00">Lưu ý:</span> Xóa bạn bè hàng loạt quá nhiều có thể có
+                    nguy cơ bị tấn công trên Facebook vì vậy hạn chế spam quá nhiều.
+                </div>
+            </div>
+            <div class="col-md-8 mb-4">
+                <div class="fetch_link">
+                    <div class="form-group">
+                        <h5 class="font-gg float-left text-white font-16">Danh sách bạn bè tương tác <span
+                                id="total_filter"></span>
+                        </h5>
+                        <div class="float-right">
+                            <button id="start_unfriend" type="button"
+                                class="btn m-auto font-gg font-13 shadow-none btn-danger">
+                                <i class="fas text-white font-13 mr-1 fa-trash"></i>
+                                Xóa bạn bè <span class="total_friend_filter"></span></button>
+                            <button id="stop_unfriend" type="button"
+                                class="btn m-auto font-gg font-13 d-none shadow-none btn-warning">
+                                <i class="fas text-white font-13 mr-1 fa-trash"></i>
+                                Hủy bỏ</button>
+
+                        </div>
+                    </div>
+                    <div class="form-group mt-5 mb-0">
+                        <div id="render_table">
+                            <span style="margin:10px 0; width: 40px; height: 40px;"
+                                class="spinner-border text-white m-auto d-block spinner-border-sm" role="status"
+                                aria-hidden="true"></span>
+                            <h5 class="font-gg text-center mt-4 font-16">Đang tải dữ liệu...</h5>
+                            <p class="font-12 text-center font-gg">Vui lòng chờ, có thể lâu nếu bạn bè trên 1000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

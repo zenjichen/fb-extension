@@ -1,0 +1,55 @@
+<section class="animated fadeIn" id="invite_friend_join" style="padding: 24px 12px 0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="setting_invite_friend">
+                    <div class="form-group">
+                        <h5 class="font-gg text-white font-16">Thiết lập mời bạn bè thích Fanpage (Invite Friend)
+                        </h5>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-gg font-14" for="">Link Fanpage <span style="color:red">*</span></label>
+                        <br>
+                        <input id="link_fanpage" placeholder="Nhập link Fanpage" class="form-input w-100" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="font-gg font-14">Lời nhắn</label>
+                        <br>
+                        <textarea class="form-input w-100" id="message" rows="3" maxlength="160"
+                            placeholder="Nhập nội dung không quá 160 kí tự (Không bắt buộc)"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-gg font-14" for="">Trạng thái bạn bè</label>
+                        <br>
+                        <select id="friend-status" class="font-gg">
+                            <option value="all-friend">Tất cả bạn bè</option>
+                            <option value="active-friend">Bạn bè đang online</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-gg font-14">Gửi lời mời đồng thời qua messenger</label>
+                        <input id="is_message" class="ml-1" type="checkbox" style="margin-bottom: -4px;">
+                    </div>
+                    <div class="form-group mb-0">
+                        <button type="button" id="start_invite"
+                            class="btn font-gg font-14 m-auto shadow-none d-block btn-primary">Bắt
+                            đầu <span class="count_friend"></span></button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="fetch_data">
+                    <h5 class="font-gg pb-1 text-white font-16">Danh sách bạn bè <span id="count_friend"></span></h5>
+                    <div class="friend-all friend-allinvite_friend_join">
+                        <span style="margin:10px 0; width: 40px; height: 40px;"
+                            class="spinner-border text-white m-auto d-block spinner-border-sm" role="status"
+                            aria-hidden="true"></span>
+                        <h5 class="font-gg text-center mt-4 font-16">Đang tải dữ liệu...</h5>
+                        <p class="font-12 text-center font-gg">Vui lòng chờ, có thể lâu nếu bạn bè trên 1000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

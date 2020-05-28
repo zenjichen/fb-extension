@@ -1,0 +1,120 @@
+<section class="animated fadeIn" id="like_new_feed" style="padding: 24px 12px 0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="setting_invite_friend">
+                    <div class="setting-reaction">
+                        <div class="form-group">
+                            <h5 class="font-16 font-gg text-white">Thiết lập tương tác bài viết mới
+                            </h5>
+                            <p class="font-gg text-justify font-12 mb-0">
+                                Tool hỗ trợ tương tác thả cảm xúc bài viết mới của bạn bè nhanh chóng nhất. Giúp bạn tiết kiệm thời gian. Và chủ động tăng độ tương tác.
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-14 font-gg" for="">Chọn reaction: <span
+                                    style="color:red">*</span></label>
+                            <br>
+                            <div class="reaction">
+                                <label><input type="checkbox" name="reaction" value="1"> <span><img
+                                            class="icon-reaction"
+                                            src="https://static.xx.fbcdn.net/rsrc.php/v3/yH/r/LH87Z6E9R6k.png?_nc_x=yK3oTlYlA3N"></span></label>
+                                <label class="ml-3"><input type="checkbox" name="reaction" value="16"> <span><img
+                                            class="icon-reaction" src="https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/QTVmPoFjk5O.png
+                                                        "></span></label>
+                                <label class="ml-3"><input type="checkbox" name="reaction" value="2"> <span><img
+                                            class="icon-reaction"
+                                            src="https://static.xx.fbcdn.net/rsrc.php/v3/yM/r/uwJNoxxjOjw.png?_nc_x=yK3oTlYlA3N"></span></label>
+                                <label class="ml-3"><input type="checkbox" name="reaction" value="3"> <span><img
+                                            class="icon-reaction"
+                                            src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/n7ydRDBQhQx.png?_nc_x=yK3oTlYlA3N"></span></label>
+                                <label class="ml-3"><input type="checkbox" name="reaction" value="4"> <span><img
+                                            class="icon-reaction"
+                                            src="https://static.xx.fbcdn.net/rsrc.php/v3/y_/r/0j-CFqn6tn2.png?_nc_x=yK3oTlYlA3N"></span></label>
+                                <label class="ml-3"><input type="checkbox" name="reaction" value="5"> <span><img
+                                            class="icon-reaction"
+                                            src="https://static.xx.fbcdn.net/rsrc.php/v3/yA/r/8gLxrbu8gc7.png?_nc_x=yK3oTlYlA3N"></span></label>
+                                <label class="ml-3"><input type="checkbox" name="reaction" value="6"> <span><img
+                                            class="icon-reaction"
+                                            src="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/II0uCVCHz8X.png?_nc_x=yK3oTlYlA3N"></span></label>
+                            </div>
+                            <p class="font-gg text-justify font-12 mt-2 mb-0">
+                                Hệ thống chọn ngẫu nhiên reaction
+                            </p>
+                        </div>
+                        <label class="font-gg font-14" for="">Thời gian giữa 2 lần reaction</label>
+                        <br>
+                        <div class="row d-flex ml-1">
+                            <div class="form-group" style="width: 46%">
+                                <label class="font-gg font-12" for="">Thời gian tối thiểu</label>
+                                <br>
+                                <select id="time-reactions-min" class="font-gg select-time">
+                                    <option value="15">15 giây</option>
+                                    <option value="30">30 giây</option>
+                                    <option value="45">45 giây</option>
+                                    <option value="60">1 phút</option>
+                                    <option value="120">2 phút</option>
+                                    <option value="180">3 phút</option>
+                                    <option value="300">5 phút</option>
+                                </select>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center mx-2" style="font-size:27px; margin-bottom: -1rem;">~</div>
+                            <div class="form-group" style="width: 46%">
+                                <label class="font-gg font-12" for="">Thời gian tối đa</label>
+                                <br>
+                                <select id="time-reactions-max" class="font-gg select-time">
+                                    <option value="30">30 giây</option>
+                                    <option value="60">1 phút</option>
+                                    <option value="120">2 phút</option>
+                                    <option value="180">3 phút</option>
+                                    <option value="240">4 phút</option>
+                                    <option value="300">5 phút</option>
+                                    <option value="600">10 phút</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-gg font-14" for="">Số lượng bài tương tác</label>
+                            <input class="w-100 form-custom" id="number_reactions" type="number" min="1" max="50" placeholder="Số bài viết tương tác ( tối đa 50 bài/lần )">
+                        </div>
+
+                        <div class="form-group mb-0">
+                            <button type="button" id="reaction_start" class="font-14 font-gg btn m-auto shadow-none btn-primary">Bắt
+                                đầu</button>
+                            <button type="button" id="reaction_stop" class="btn d-none m-auto shadow-none btn-danger">Hủy bỏ</button>
+                        </div>
+                    </div>
+
+                    <div class="loading-reaction d-none">
+                        <div class="form-group">
+                            <h5 class="font-16 font-gg">Đang tương tác....</h5>
+                        </div>
+                        <div class="d-flex mb-4 justify-content-center">
+                            <div class="spinner-border text-white" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+                        <div class="progress mb-3 m-auto">
+                            <div id="progress" class="progress-bar progress-bar-striped progress-bar-animated">
+                            </div>
+                        </div>
+                        <div class="form-group mt-4 mb-0">
+                            <button type="button" id="reaction_stop" class="font-gg font-14 btn m-auto shadow-none btn-danger">Hủy
+                                bỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="note form-group mt-3 font-12 p-2">
+                    <span style="color:#FFBF00">Lưu ý:</span> Thể hiện cảm xúc đối với bài viết nếu quá nhiều có thể có nguy cơ bị tấn công trên Facebook vì vậy hạn chế spam quá nhiều.
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="fetch_link">
+                    <h5 class="font-gg text-white font-16">Danh sách bài viết đã reaction</h5>
+                    <div id="fetch_table"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

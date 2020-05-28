@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Tool</title>
+    <link rel="stylesheet" href="../css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/lib/fontawesome-all.css">
+    <link rel="stylesheet" href="../css/lib/shared.min.css">
+    <link rel="stylesheet" href="../css/content.min.css">
+    <link rel="stylesheet" href="../css/lib/sweetalert2.min.css">
+    <link rel="stylesheet" href="../css/datatable.css">
+    <link rel="stylesheet" href="../css/lib/animate.css">
+    <link rel="stylesheet" href="../css/policy.css">
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header d-flex">
+                <a target="top" href="https://fff.com.vn">
+                    <img src="../img/fff-white.png">
+                    <div class="title ml-2 font-14 font-gg text-white">
+                        Facebook Tools <span class="badge ml-1 font-gg badge-primary font-10 font-gg">Beta</span>
+                        <p class="font-gg mb-0 font-10 text-white"><a target="top" href="https://fff.com.vn">by
+                                <span class="text-primary">3F
+                                    Solutions</span></a></p>
+                    </div>
+                </a>
+            </div>
+            <ul class="list-unstyled components">
+                <!-- <p>Dummy Heading</p> -->
+                <li>
+                    <a class="font-14 active_tab font-gg" href="?profile">
+                        <i class="fas fa-home icon-nav"></i>Dashboard
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#hot" data-toggle="collapse" aria-expanded="false" class=" font-gg font-14">
+                        Tính năng hot</a>
+                    <ul class="collapse list-unstyled d-block" id="hot">
+                        <li>
+                            <a class="font-14 font-gg" href="?picture-guard">
+                                <i class="fas fa-shield-alt icon-nav"></i>Khiên bảo vệ
+                            </a>
+                        </li>
+                        <li>
+                            <a class="font-14 font-gg" href="?download_video"><i
+                                    class="far fa-download icon-nav"></i>Tải
+                                video từ Facebook
+                                <span class="badge ml-2 font-10 font-gg badge-success">Mới</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="font-14 font-gg" href="?security-tester"><i
+                                    class="fas fa-unlock-alt icon-nav"></i>Quét
+                                bảo
+                                mật
+                                <span class="badge ml-2 font-10 font-gg badge-success">Mới</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="font-14 font-gg" href="?unseen_mess"><i class="far fa-eye-slash icon-nav"></i>Ẩn
+                                Messenger
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- <li class="font-gg font-14 ml-2 menu-title mt-2 mb-1">Tính năng Hot</li> -->
+
+
+                <!-- <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle font-gg font-14">
+                        Tính năng bạn bè</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                    </ul>
+                </li> -->
+                <li class="active">
+                    <a href="#friend" data-toggle="collapse" aria-expanded="false" class="font-gg font-14">
+                        Tính năng bạn bè <span class="badge ml-2 font-gg badge-primary font-10 font-gg">Miễn
+                            phí</span></a>
+                    <ul class="collapse list-unstyled d-block">
+                        <li>
+                            <a class="font-14 font-gg" href="?filer-friend-interaction"><i
+                                    class="fas fa-filter mr-2"></i>Lọc
+                                bạn
+                                bè</a>
+                        </li>
+                        <li class="d-none">
+                            <a class="font-14 font-gg" href="?friend_deactivated"><i
+                                    class="far fa-download mr-2"></i>Xóa bạn bè
+                                bị khóa
+                                <span class="badge ml-2 font-10 font-gg badge-success">Mới</span>
+                            </a>
+                        </li>
+                        <li class="d-none">
+                            <a class="font-14 font-gg" href="?invite_group"><i class="fas fa-filter mr-2"></i>
+                                Mời bạn bè tham gia nhóm
+                            </a>
+                        </li>
+                        <li>
+                            <a class="font-14 font-gg" href="?invite_friend_join"><i
+                                    class="fab fa-facebook-square mr-2"></i>Mời bạn bè
+                                thích trang</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#tuongtac" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle font-gg font-14">
+                        Tính năng tương tác <span class="badge ml-2 font-gg badge-primary font-10 font-gg">Miễn
+                            phí</span></a>
+                    <ul class="collapse list-unstyled d-block">
+                        <li>
+                            <a class="font-14 font-gg" href="?pokes"><i class="far fa-hand-point-right mr-2"></i>Chọc
+                                ghẹo
+                                bạn bè </a>
+                        </li>
+                        <li>
+                            <a class="font-14 font-gg" href="?like_new_feed"><i class="far fa-thumbs-up mr-2"></i>Thả
+                                tim bài viết mới <span
+                                    class="badge ml-2 d-none font-gg badge-success font-10 font-gg">Mới</span></a>
+                        </li>
+                        <li class="d-none">
+                            <a class="font-14 font-gg" href="?invite_live"><i class=" far fa-eye mr-2"></i>Mời bạn
+                                bè xem live <span
+                                    class="badge ml-2 font-gg badge-success font-10 font-gg">Mới</span></a>
+                        </li>
+                        <li class="d-none">
+                            <a class="font-14 font-gg" href="?leave-group"><i class="fas fa-filter mr-2"></i>Hủy
+                                tham gia nhóm
+                                <span class="badge ml-2 d-none font-10 font-gg badge-danger">Hot</span></a>
+                        </li>
+                        <li class="d-none">
+                            <a class="font-14 font-gg" href="?autopost-group"><i class="fas fa-filter mr-2"></i>
+                                Auto Post Group
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#auto" data-toggle="collapse" aria-expanded="false"
+                        class="dropdown-toggle font-gg font-14">
+                        Tính năng tự động <span
+                            class="badge ml-2 font-gg badge-warning font-10 font-gg">Premium</span></a>
+                    <ul class="collapse list-unstyled d-block">
+                        <li>
+                            <a class="font-14 font-gg" href="?auto_reaction"><i class="far fa-heart mr-2"></i>Auto
+                                thả tim bài
+                                mới<span class="badge ml-2 font-gg badge-success font-10 font-gg">Mới</span></a>
+                        </li>
+                        <li class="d-none">
+                            <a class="font-14 font-gg" href="?auto_new_comment"><i
+                                    class="far fa-thumbs-up mr-2"></i>Auto comment bài mới<span
+                                    class="badge ml-2 font-gg badge-success font-10 font-gg">Mới</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class=" font-gg font-14">
+                            Tính năng trao đổi <span
+                                class="badge ml-2 font-gg badge-warning font-10 font-gg">Premium</span></a>
+                        <ul class="collapse list-unstyled d-block">
+                            <li>
+                                <a class="font-14 font-gg" href="#auto_reaction"><i
+                                        class="far fa-hand-point-right d-none mr-2"></i>Auto
+                                    thả tim bài
+                                    mới</a>
+                            </li>
+                            <li>
+                                <a class="font-14 font-gg" href="#like_new_feed"><i
+                                        class="far fa-thumbs-up d-none mr-2"></i>Auto comment bài mới</a>
+                            </li>
+                        </ul>
+                    </li> -->
+                <!-- <li>
+                        <a class="font-14 font-gg" href="#">Bộ công cụ tăng khách</a>
+                    </li> -->
+            </ul>
+            <!-- <ul class="list-unstyled CTAs">
+                    <li>
+                        <a href="https://www.facebook.com/messages/t/fff.com.vn" class="article d-none">Liên hệ hỗ
+                            trợ</a>
+                    </li>
+                </ul> -->
+
+        </nav>
+        <!-- Page Content  -->
+        <div id="main-content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fa fa-fw fa-bars text-white"></i>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item mr-2">
+                                <div class="dropdown">
+                                    <button class="btn mt-1 more-tool-btn" type="button" id="dropdownMenuButton1"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas font-16 fa-cubes mr-1"></i>
+                                        <span class="font-14 font-gg">3F Tools</span>
+                                        <!-- <i class="fas text-white fa-sort-down ml-1"></i> -->
+                                    </button>
+                                    <div class="dropdown-menu more-tool-content" aria-labelledby="dropdownMenuButton1">
+                                        <div class="row mb-2">
+                                            <div class="col-4">
+                                                <a class="dropdown-item font-gg font-12" target="top"
+                                                    href="https://admin.fff.com.vn/insight/">
+                                                    <img width="35" height="35" class="d-block m-auto"
+                                                        src="../img/phantich.svg">
+                                                    <p class="text-center mb-0 font-gg font-12">Phân tích</p>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a class="dropdown-item font-gg font-12" target="top"
+                                                    href="https://admin.fff.com.vn/quangcao/">
+                                                    <img width="35" height="35" class="d-block m-auto"
+                                                        src="../img/quangcao.svg">
+                                                    <p class="text-center mb-0 font-gg font-12">Quảng cáo</p>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a class="dropdown-item font-gg font-12" target="top"
+                                                    href="https://admin.fff.com.vn/hutkhach/">
+                                                    <img width="35" height="35" class="d-block m-auto"
+                                                        src="../img/hutkhach.svg">
+                                                    <p class="text-center mb-0 font-gg font-12">Hút khách</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <a class="dropdown-item font-gg font-12" target="top"
+                                                    href="https://admin.fff.com.vn/hunter/">
+                                                    <img width="35" height="35" class="d-block m-auto"
+                                                        src="../img/timkhach.svg">
+                                                    <p class="text-center mb-0 font-gg font-12">Tìm khách</p>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a class="dropdown-item font-gg font-12" target="top"
+                                                    href="https://admin.fff.com.vn/go.php?userToken=ZGdZVktsdE91by9qOUtndjc4MjYwTHdQeXllT3NKTS9ZUHVzdThJYTNWST06OhMNb7G48NOo6noCn1JFw0I&amp;view=chat">
+                                                    <img width="35" height="35" class="d-block m-auto"
+                                                        src="../img/chamkhach.svg">
+                                                    <p class="text-center mb-0 font-gg font-12">Chat bot</p>
+                                                </a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a class="dropdown-item font-gg font-12" target="top"
+                                                    href="https://webrank.vn/?view=buy-traffic">
+                                                    <img width="35" height="35" class="d-block m-auto"
+                                                        src="../img/timkhach.svg">
+                                                    <p class="text-center mb-0 font-gg font-12">Tăng Traffic</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <div class="header-top-img">
+                                            <img class="img-header">
+                                            <i class="fas text-white fa-sort-down"></i>
+                                        </div>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a style="cursor: pointer;" class="dropdown-item getToken font-gg font-13"><i
+                                                class="fas fa-key mr-2"></i> Access Token</a>
+                                        <a style="cursor: pointer;" class="dropdown-item logout font-gg font-13"><i
+                                                class="fas fa-sign-out-alt mr-2"></i> Đăng xuất</a>
+                                    </div>
+                                </div>
+                                <!-- <div class="header-top-img">
+                                        <img src="https://graph.facebook.com/100003826069804/picture?height=500">
+                                    </div>
+
+                                    <ul class="collapse list-unstyled" id="sub1">
+                                        <li>
+                                            <a class="font-14 font-gg" href="#filer-friend-interaction"><i
+                                                    class="fas fa-filter mr-2"></i>Lọc bạn
+                                                bè </a>
+                                        </li>
+                                        <li>
+                                            <a class="font-14 font-gg" href="#picture-guard">
+                                                <i class="fas fa-shield-alt mr-2"></i> Khiên bảo vệ
+                
+                                            </a>
+                                        </li>
+                                    </ul> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="content">
+                <!-- Loading -->
+                <div class="loader">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <!-- //////////// -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/vue.min.js" type="text/javascript"></script>
+<script type='text/javascript' src="../js/lib/jquery.min.js"></script>
+<script src="../js/lib/popper.min.js"></script>
+<script src="../js/lib/bootstrap.min.js"></script>
+<script src="../js/lib/jquery.dataTables.min.js"></script>
+<script src="../js/lib/dataTables.buttons.min.js"></script>
+<script src="../js/lib//dataTables.select.min.js"></script>
+<script src="../js/lib/moment.min.js"></script>
+<script src="../js/lib/vi.js"></script>
+<script src="../js/lib/sweetalert2.min.js"></script>
+<!-- <script src="../js/lib/numeral-vi.min.js"></script> -->
+<script src="../js/lib/numeral.min.js"></script>
+
+
+<!-- //////////////////////////////////////////////////////////////// -->
+<script src="../js/policy.js"></script>
+<script src="../js/function_gobal.js"></script>
+<script src="../js/profile.js"></script>
+<script src="../js/pokes.js"></script>
+<script src="../js/shield.js"></script>
+<script src="../js/reaction.js"></script>
+<script src="../js/auto_new_comment.js"></script>
+<script src="../js/invite_friend.js"></script>
+<script src="../js/filter_friend.js"></script>
+<script src="../js/leave_group.js"></script>
+<script src="../js/get_id_facebook.js"></script>
+<script src="../js/invite_live.js"></script>
+<script src="../js/auto_like.js"></script>
+<script src="../js/invite_group.js"></script>
+<script src="../js/download_video.js"></script>
+<script src="../js/init.js"></script>
+<script src="../js/autopost_group.js"></script>
+<script src="../js/unseen_messenger.js"></script>
+<script src="../js/settings.js"></script>
+<script src="../js/security-tester.js"></script>
+<script src="../js/friend_deactivated.js"></script>
+<!-- <script src="../js/options.js"></script> -->
+<!-- <script src="../js/abc.js"></script> -->
+
+
+</html>

@@ -1,0 +1,90 @@
+<section class="animated fadeIn" id="pokes" style="padding: 24px 12px 0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="setting_pokes">
+                    <div class="setting_poke">
+                        <div class="form-group">
+                            <h5 class="font-16 text-white font-gg">Thiết lập Mời bạn bè xem Live</h5>
+                            <p class="font-gg text-justify font-12 mb-0">
+                                Mời bạn bè xem Live là hình thức bạn có thể mời bạn bè trên Facebook tham gia và chia sẻ màn hình phát video trực tuyến ngay cả khi hai người không ở cùng một địa điểm, thông qua việc gửi thông báo cho họ. Tool Auto Invite Friend Live giúp bạn mời hàng
+                                loạt bạn bè giúp tiết kiệm rất nhiều thời gian mời của bạn.
+                            </p>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-14 font-gg">Nhập ID của Live cần xem</label> <br>
+                            <input class="ip-idlive" id="ip-idlive" type="text" style="margin-bottom: -5px;">
+                        </div>
+                        <label class="font-gg font-14" for="">Độ trễ ngẫu nhiên</label>
+                        <br>
+                        <div class="form-group d-flex flex-row">
+                            <select id="invite_timeout1" class="font-gg col-5">
+                                <option value="5">5 giây</option>
+                                <option value="10">10 giây</option>
+                                <option value="15">15 giây</option>
+                                <option value="20">20 giây</option>
+                                <option value="25">25 giây</option>
+                                <option value="30">30 giây</option>
+                                
+                            </select>
+                            <div class="d-flex align-items-center justify-content-center ml-2" style="font-size:27px">~</div>
+                            <select id="invite_timeout2" class="font-gg ml-2 col-5">
+                                <option value="35">35 giây</option>
+                                <option value="40">40 giây</option>
+                                <option value="45">45 giây</option>
+                                <option value="50">50 giây</option>
+                                <option value="55">55 giây</option>
+                                <option value="60">60 giây</option>                                
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-gg font-14" for="">Thời gian trễ</label>
+                            <br>
+                            <select id="friend-status" class="font-gg">
+                                <option value="all-friend">Tất cả bạn bè</option>
+                                <option value="active-friend">Bạn bè đang online</option>
+                            </select>
+                        </div>
+                        <!-- <div class="form-group">
+                            <label class="font-14 font-gg">Xét thời gian Live tự động</label>
+                            <input id="time_auto" type="checkbox" style="margin-bottom: -5px;">
+                        </div> -->
+                        <div class="form-group mb-0 group-btn-pokes">
+                            <button type="button" id="start_invite_live" class="btn m-auto shadow-none btn-primary font-gg font-14" style="display:block">Bắt
+                                đầu <span class="count_friend"></span></button>
+                        </div>
+                    </div>
+
+                    <div class="loading_poke d-none">
+                        <div class="progress-pokes">
+                            <label class="font-gg font-16" for="">Đang mời...<br>
+                                <!-- <br>
+                                <span class="font-16" id="T"></span> -->
+                            </label>
+                        </div>
+                        <div class="form-group kq-poke">
+
+                        </div>
+
+                        <div class="form-group mb-0 mt-2 group-btn-pokes">
+                            <button type="button" id="stop_invitelive" class="btn m-auto shadow-none font-14 font-gg btn-danger">Hủy
+                                bỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="note form-group mt-3 font-14 p-2">
+                    <span style="color:#FFBF00">Lưu ý:</span> Mời bạn xem Livestream nhiều có thể có nguy cơ bị tấn công trên Facebook vì vậy nên hạn chế mời quá nhiều.
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="fetch_data">
+                    <h5 class="font-gg pb-1 text-white font-16">Danh sách bạn bè</h5>
+                    <div class="friend-all friend-allinvite_live">
+                        <span style="margin:10px 0; width: 40px; height: 40px;" class="spinner-border text-white m-auto d-block spinner-border-sm" role="status" aria-hidden="true"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

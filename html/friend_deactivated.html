@@ -1,0 +1,51 @@
+<section class="animated fadeIn" id="like_new_feed" style="padding: 24px 12px 0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="fetch_link">
+                    <div class="form-group">
+                        <h5 class="font-gg float-left text-white mb-3 font-16">Danh sách bạn bè bị khóa <span class="count_friend"></span></h5>
+                        <div class="float-right">
+                            <button id="start_unfriend" type="button"
+                                class="btn m-auto font-gg font-13 shadow-none btn-danger">
+                                <i class="fas text-white font-13 mr-1 fa-trash"></i>
+                                Xóa tất cả <span class="total_friend_filter"></span></button>
+                            <button id="stop_unfriend" type="button"
+                                class="btn m-auto font-gg font-13 d-none shadow-none btn-warning">
+                                <i class="fas text-white font-13 mr-1 fa-trash"></i>
+                                Hủy bỏ</button>
+                        </div>
+                    </div>
+                  
+                    <div id="fetch_table">
+                        <span style="margin:10px 0; width: 40px; height: 40px;"
+                            class="spinner-border text-white m-auto d-block spinner-border-sm" role="status"
+                            aria-hidden="true"></span>
+                        <h5 class="font-gg text-center mt-4 font-16">Đang tải dữ liệu...</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5"> 
+                <div class="filter-friend-time">
+                    <div class="loading-unfriend">
+                        <div class="form-group mb-0">
+                            <h5 class="font-16 text-white font-gg">Tổng quan</h5>
+                            <p class="font-gg font-12 mb-0">Hệ thống lọc ra những bạn bè đã bị Facebook khóa hoặc bị ngưng kích hoạt. Bạn có thể xóa tất cả.</p>
+                        </div>
+                        <div class="loading d-none">
+                            <div class="form-group">
+                                <span class="font-gg font-12">Đang xóa...</span>
+                            </div>
+                            <div class="form-group kq">
+        
+                            </div>
+                        </div>
+                        
+                    </div> 
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>

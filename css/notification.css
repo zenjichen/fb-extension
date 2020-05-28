@@ -1,0 +1,55 @@
+#notification-fff{
+    position: fixed;
+    z-index: 9999;
+    bottom:  40px;
+    left: 20px;
+}
+#notification-fff .body-notification{
+    width: 300px;
+    height: 80px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 5px;
+    border-left:5px solid #58ACFA;
+    box-shadow: 0 12px 18px -16px rgba(0,0,0,.3);
+    background: #edf2f9;
+}
+
+#notification-fff .body-notification .left-fff{
+    width: 25%;
+}
+.left-fff .icon-fff{
+    display: block;
+    font-size: 40px;
+}
+.content_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2px 0;
+    height: 95%;
+}
+#notification-fff .body-notification .right-fff{
+    padding: 5px 10px;
+    width: 75%;
+}
+
+.right-fff .title-fff{
+    font-size: 14px;
+    margin: 5px 0;
+    font-weight: 600;
+    color: #222736;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.right-fff .description-fff{
+    font-size: 12px;
+    line-height: 20px;
+    margin: 5px 0;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}  
+.right-fff .name-fff a{
+    color: #2E9AFE;
+    font-weight: 600;
+}

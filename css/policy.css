@@ -1,0 +1,48 @@
+.page-content {
+    border: 1.5px solid #ddd;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.title-policy {
+    color: #3c4043;
+    font-family: 'Google Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 32px;
+}
+
+.content-terms p {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Roboto, arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 0;
+    letter-spacing: .2px;
+    line-height: 24px;
+}
+
+p.ct-ct.style-font-cl {
+    margin-bottom: 10px;
+}
+
+.policy-facebook li {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Roboto, arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 0;
+    letter-spacing: .2px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+p.style-font-cl {
+    font-weight: 600
+}
+
+button#btn_quit {
+    border: 0;
+    padding: 0 18px;
+}

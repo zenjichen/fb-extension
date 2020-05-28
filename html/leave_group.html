@@ -1,0 +1,81 @@
+<section class="animated fadeIn" id="pokes" style="padding: 24px 12px 0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="setting_pokes">
+                    <div class="setting_poke">
+                        <div class="form-group">
+                            <h5 class="font-16 text-white font-gg">Thiết lập Hủy tham gia nhóm (Leave Group)</h5>
+                            <p class="font-gg text-justify font-12 mb-0">
+                                Hủy tham gia nhóm là hình thức rời khỏi nhóm,
+                                thông qua việc chọn nhóm và thoát.
+                                Tool Auto Leave Group giúp bạn rời khỏi hàng loạt nhóm không mong muốn giúp tiết kiệm rất nhiều thời gian
+                                của bạn.
+                            </p>
+                        </div>          
+                        <label class="font-gg font-14" for="">Độ trễ ngẫu nhiên</label>
+                            <br>              
+                        <div class="form-group d-flex flex-row">
+                            
+                            <select id="leave-timeout1" class="font-gg col-5">
+                                <option value="2">2 giây</option>
+                                <option value="4">4 giây</option>
+                                <option value="6">6 giây</option>
+                                <option value="8">8 giây</option>
+                                <option value="10">10 giây</option>                              
+                            </select>
+                              <div class="d-flex align-items-center justify-content-center ml-2"style="font-size:27px">~</div>
+                            <select id="leave-timeout2" class="font-gg col-5 ml-2">
+                                <option value="12">12 giây</option>
+                                <option value="14">14 giây</option>
+                                <option value="16">16 giây</option>
+                                <option value="18">18 giây</option>
+                                <option value="20">20 giây</option>> 
+                            </select>
+                        </div>
+                     
+                        <div class="form-group mb-0 group-btn-pokes">
+                            <button type="button" id="start_leavegroup"
+                                class="btn m-auto shadow-none btn-primary font-gg font-14"
+                                style="display:block">Bắt
+                                đầu <span class="count_friend"></span></button>
+                        </div>
+                    </div>
+
+                    <div class="loading_poke d-none">
+                        <div class="progress-pokes">
+                            <label class="font-gg font-16" for="">Đang thoát nhóm...<br>
+                                <!-- <br>
+                                <span class="font-16" id="T"></span> -->
+                            </label>
+                        </div>
+                        <div class="form-group kq-poke">
+
+                        </div>
+
+                        <div class="form-group mb-0 mt-2 group-btn-pokes">
+                            <button type="button" id="stop_leavegroup"
+                                class="btn m-auto shadow-none font-14 font-gg btn-danger">Hủy
+                                bỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="note form-group mt-3 font-14 p-2">
+                    <span style="color:#FFBF00">Lưu ý:</span> Auto Leave Group quá nhiều có thể có nguy cơ bị
+                    tấn công trên Facebook vì vậy nên cân nhắc lại khi mời quá nhiều.
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="fetch_data">
+                    <h5 class="font-gg pb-1 text-white font-16">Danh sách Nhóm</h5>
+                    <div class="group-all group-allleave-group">
+                        <span style="margin:10px 0; width: 40px; height: 40px;"
+                            class="spinner-border text-white m-auto d-block spinner-border-sm"
+                            role="status" aria-hidden="true"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

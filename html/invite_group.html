@@ -1,0 +1,88 @@
+<section class="animated fadeIn" id="invite_group" style="padding: 24px 12px 0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="setting_pokes">
+                    <div class="setting_poke">
+                        <div class="form-group">
+                            <h5 class="font-16 text-white font-gg">Thiết lập mời bạn bè tham gia nhóm (Invite Group)</h5>
+                            <p class="font-gg text-justify font-12 mb-0">
+                                Hệ thống sẽ mời bạn bè của bạn tham gia nhóm. Bạn cần chọn
+                            </p>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label class="font-gg font-14" for="">Link Group <span style="color:red">*</span></label>
+                            <br>
+                            <input id="link_group" placeholder="Nhập link Group" class="form-input w-100" type="text">
+                        </div>
+                        <label class="font-gg font-14" for="">Thời gian giữa 2 lần mời tham gia</label>
+                        <br>
+                        <div class="row d-flex ml-1">
+                            <div class="form-group " style="width: 45%">
+                                <select id="group-time-min" class="font-gg">
+                                        <option value="10">10 giây</option>
+                                        <option value="20">20 giây</option>
+                                        <option value="30">30 giây</option>
+                                        <option value="45">45 giây</option>
+                                        <option value="60">1 phút</option>
+                                        <option value="120">2 phút</option>
+                                        <option value="180">3 phút</option>
+                                        <option value="240">4 phút</option>
+                                        <option value="300">5 phút</option>
+                                    </select>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center ml-2 mb-3" style="font-size:27px">~</div>
+                            <div class="form-group ml-2" style="width: 45%">
+                                <select id="group-time-max" class="font-gg">
+                                        <option value="20">20 giây</option>
+                                        <option value="30">30 giây</option>
+                                        <option value="60">1 phút</option>
+                                        <option value="120">2 phút</option>
+                                        <option value="180">3 phút</option>
+                                        <option value="240">4 phút</option>
+                                        <option value="300">5 phút</option>
+                                        <option value="360">6 phút</option>
+                                        <option value="420">7 phút</option>
+                                        <option value="480">8 phút</option>
+                                        <option value="540">9 phút</option>
+                                        <option value="600">10 phút</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="form-group mb-0 group-btn-pokes mt-3">
+                            <button type="button" id="start_invite_grout" class="btn m-auto shadow-none btn-primary font-gg font-14" style="display:block">Bắt
+                                đầu <span class="count_friend"></span></button>
+                        </div>
+                    </div>
+
+                    <div class="loading_poke d-none">
+                        <div class="progress-pokes">
+                            <label class="font-gg font-16" for="">Đang mời...<br>
+                                <!-- <br>
+                                <span class="font-16" id="T"></span> -->
+                            </label>
+                        </div>
+                        <div class="form-group kq-poke">
+
+                        </div>
+
+                        <div class="form-group mb-0 mt-2 group-btn-pokes">
+                            <button type="button" id="stop_group" class="btn m-auto shadow-none font-14 font-gg btn-danger">Hủy
+                                bỏ</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-7">
+                <div class="fetch_data">
+                    <h5 class="font-gg pb-1 text-white font-16">Danh sách bạn bè</h5>
+                    <div class="friend-all friend-allgroup">
+                        <span style="margin:10px 0; width: 40px; height: 40px;" class="spinner-border text-white m-auto d-block spinner-border-sm" role="status" aria-hidden="true"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

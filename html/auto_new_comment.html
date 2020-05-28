@@ -1,0 +1,156 @@
+<div class="header-box">
+    <div class="header-top">
+        <div class="icon-list">
+            <i class="fas font-18 fa-list-ul text-white"></i>
+        </div>
+        <div class="img">
+            <img src="https://graph.facebook.com/100049921931061/picture?height=500">
+
+        </div>
+    </div>
+    <div class="header-text pl-4" style="padding-top:1.8rem;">
+        <h5 class="font-gg text-white"><i class="fas fa-comments mr-2"></i>Comment tự động <span class="badge ml-2 font-gg badge-warning font-10 font-gg">Premium</span>
+        </h5>
+        <div class="d-block">
+            <p class="font-gg font-14 d-block pl-4">Tự động Comment với các bài đăng được chọn lựa trên Facebook.</p>
+        </div>
+    </div>
+
+    <section class="animated fadeIn" id="like_new_feed" style="padding: 5px 12px 0;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="setting_invite_friend">
+                        <div class="setting-reaction">
+                            <div class="form-group">
+                                <h5 class="font-16 font-gg text-white">Thiết lập</h5>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-gg font-14" for="">Thời gian giữa 2 lần tương tác</label>
+                                <br>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <!-- <label class="font-gg font-14" for="">Tối thiểu</label> -->
+                                            <select id="group-time-min" class="font-gg">
+                                                <option value="30">30 giây</option>
+                                                <option value="10">1 phút</option>
+                                                <option value="120">2 phút</option>
+                                                <option value="300">3 phút</option>
+                                                <option value="300">4 phút</option>
+                                                <option value="300">5 phút</option>
+                                                <option value="300">6 phút</option>
+                                                <option value="300">7 phút</option>
+                                                <option value="300">8 phút</option>
+                                                <option value="300">9 phút</option>
+                                                <option value="600">10 phút</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <!-- <label class="font-gg font-14" for="">Tối đa</label> -->
+                                            <select id="group-time-max" class="font-gg">
+                                                <option value="60">1 phút</option>
+                                                <option value="15">2 phút</option>
+                                                <option value="600">3 phút</option>
+                                                <option value="120">4 phút</option>
+                                                <option value="300">5 phút</option>
+                                                <option value="600">6 phút</option>
+                                                <option value="120">7 phút</option>
+                                                <option value="300">8 phút</option>
+                                                <option value="600">9 phút</option>
+                                                <option value="120">10 phút</option>
+                                                <option value="300">12 phút</option>
+                                                <option value="600">14 phút</option>
+                                                <option value="120">16 phút</option>
+                                                <option value="300">18 phút</option>
+                                                <option value="600">20 phút</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-gg font-14">Lời nhắn</label>
+                                <br>
+                                <textarea class="form-input w-100" id="message" rows="3" maxlength="160" placeholder="Nhập nội dung muốn comment tự động"></textarea>
+                            </div>
+                            <div class="form-check form-check-inline d-block ml-2">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="all-post" value="option1">
+                                <label class="form-check-label" for="all-post">Tất cả.</label>
+                            </div>
+                            <div class="form-check form-check-inline ml-2">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="swal-friend" value="option2">
+                                <label class="form-check-label" for="swal-friend">
+                                    Bạn bè được lựa chọn.<span class="font-12 ml-2 text-primary d-none btn-editcomment">thay đổi <i
+                                            class="far fa-edit"></i></span>
+                                </label>
+                            </div>
+                            <hr style="background: #ffffff29;width: 50%;height: 1px;">
+                            <div class="form-group mb-0">
+                                <p class="font-gg text-warning font-12">Lưu ý: Để cấu hình bạn cần phải tắt chức năng.</p>
+                            </div>
+
+                            <div class="form-group text-center mb-0 mt-4">
+                                <label class="cstm-switch">
+                                    <input type="checkbox" name="check-autocomment" value="1" data-feature="autoReactions"
+                                        id="autoComment" class="cstm-switch-input system-feature-check">
+                                    <span class="cstm-switch-indicator "></span>
+                                    <span class="cstm-switch-description text-white font-gg font-14"
+                                        lang-vi="Bật tự động tương tác">Bật tự động tương tác</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="loading-reaction d-none">
+                            <div class="form-group">
+                                <h5 class="font-16 font-gg">Đang tương tác....</h5>
+                            </div>
+                            <div class="d-flex mb-4 justify-content-center">
+                                <div class="spinner-border text-white" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div>
+                            <div class="progress mb-3 m-auto">
+                                <div id="progress" class="progress-bar progress-bar-striped progress-bar-animated">
+                                </div>
+                            </div>
+                            <div class="form-group mt-4 mb-0">
+                                <button type="button" id="reaction_stop" class="font-gg font-14 btn m-auto shadow-none btn-danger">Hủy
+                                    bỏ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <!-- <div class="fetch_data">
+                        <h5 class="font-gg pb-1 text-white font-16">Danh sách bạn bè</h5>
+                        <div class="friend-all friend-allcomment">
+                            <span style="margin:10px 0; width: 40px; height: 40px;" class="spinner-border text-white m-auto d-block spinner-border-sm" role="status" aria-hidden="true"></span>
+                        </div>
+                    </div> -->
+                    <div class="fetch_link">
+                        <h5 class="font-gg text-white font-16">Tổng quan</h5>
+                        <p class="font-gg font-14">Nó hoạt động thế nào ?</p>
+                        <p class="font-gg font-14">
+                            Hệ thống sẻ cập nhật realtime bài viết mới trên Facebook của bạn. Sau đó bot sẻ tự động tương tác cho đến khi bạn tắt chức năng đi.
+                            <br><span class="text-primary">Xem lịch sử hoạt động tương tác tại đây:</span> <span class="text-warning"><a
+                                    target="top" href="https://www.facebook.com/100051128732843/allactivity">Xem ngay</a></span>
+                        </p>
+                    </div>
+                    <div class="fetch-user-comment d-none mt-4">
+                        <h5 class="font-gg text-white font-16 mb-1">Danh sách comment</h5>
+                        <p class="font-gg text-justify font-12 mb-1">
+                            Dưới đây là danh sánh bạn bè được comment tự động:
+                        </p>
+                        <div class="list-friend-comment"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

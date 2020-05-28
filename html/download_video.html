@@ -1,0 +1,69 @@
+<section class="animated fadeIn" id="pokes" style="padding: 24px 12px 0">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="setting_pokes">
+                    <div class="setting_poke">
+                        <div class="form-group">
+                            <h5 class="font-16 text-white font-gg">Thiết lập Tải video từ Facebook (Download Video Facebook)</h5>
+                            <p class="font-gg text-justify font-12 mb-0">
+                              Download Video là hình thức tải video từ Facebook về máy,
+                                thông qua việc dán URL video vào ô và thực hiện lưu .
+                                Tool Download Video giúp bạn tải video HD không qua hình thức trung gian phức tạp tiết kiệm thời gian
+                                của bạn.
+                            </p>
+                        </div>          
+                        <label class="font-gg font-14" for="">Nhập Liên kết Video từ Facebook</label>
+                            <br>              
+                        <div class="form-group">                            
+                            <input class="ip-dlvideo" id="ip-dlvideo" value ="" type="text" style="margin-bottom: 0px;">
+                            <small class="ml-3 mb-3" style="font-size: 12px;"><span style="color: yellow;" class="font-12" >*</span >&nbsp;Ví dụ: https://www.facebook.com/fff.com.vn/videos/2573879152868869</small><br>                            
+                            <small class="ml-3 mb-3" style="font-size: 12px;"><span style="color: yellow;" class="font-12" >*</span >&nbsp;Chú ý: Link không bao gồm khoảng trắng</small>                            
+                        </div>
+                        
+                        <div class="form-group mb-0 group-btn-pokes">
+                            <button type="button" id="start_downvideo"
+                                class="btn m-auto shadow-none btn-primary font-gg font-14"
+                                style="display:block">Bắt
+                                đầu <span class="count_friend"></span></button>
+                        </div>
+                    </div>
+
+                    <div class="loading_poke d-none">
+                        <div class="progress-pokes">
+                            <label class="font-gg font-16" for="">Đang quét video...<br>
+                                <!-- <br>
+                                <span class="font-16" id="T"></span> -->
+                            </label>
+                        </div>
+                        <div class="form-group kq-poke"  style="background: #00000085;color:darkgreen;">
+
+                        </div>
+
+                       
+                        <div class="form-group mb-0 mt-2 group-btn-pokes d-flex flex-row justify-content-center">
+                            <button type="button" id="stop_leavegroup"
+                                class="btn ml-3 shadow-none font-14 font-gg btn-danger">Hủy
+                                tải xuống</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="note form-group mt-3 font-14 p-2">
+                    <span style="color:#FFBF00">Lưu ý:</span> Auto Leave Group quá nhiều có thể có nguy cơ bị
+                    tấn công trên Facebook vì vậy nên cân nhắc lại khi mời quá nhiều.
+                </div> -->
+            </div>
+
+            <!-- <div class="col-lg-7">
+                <div class="fetch_data">
+                    <h5 class="font-gg pb-1 text-white font-16">Danh sách Nhóm</h5>
+                    <div class="group-all group-allleave-group">
+                        <span style="margin:10px 0; width: 40px; height: 40px;"
+                            class="spinner-border text-white m-auto d-block spinner-border-sm"
+                            role="status" aria-hidden="true"></span>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>

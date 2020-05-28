@@ -1,0 +1,57 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "name": "Facebook Tools",
+    "short_name": "Facebook Tools - Tăng Like & Tăng Tương Tác",
+    "version": "1.0.6",
+    "manifest_version": 2,
+    "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.google-analytics.com https://kit.fontawesome.com/6b27cf648d.js https://ssl.google-analytics.com https://ajax.googleapis.com https://apis.google.com https://stackpath.bootstrapcdn.com; object-src 'self'",
+    "permissions": [
+        "*://*/*",
+        "storage",
+        "webRequest",
+        "webRequestBlocking",
+        "cookies"
+    ],
+    "homepage_url": "https://fff.com.vn",
+    "icons": {
+        "128": "img/hexagon.png",
+        "16": "img/hexagon.png",
+        "48": "img/hexagon.png"
+    },
+    "description": "Facebook Tools - Công cụ tạo khiên, tăng like, tăng tương tác facebook.",
+    "browser_action": {
+        "default_icon": {
+            "128": "img/hexagon.png",
+            "16": "img/hexagon.png",
+            "48": "img/hexagon.png"
+        },
+        "default_title": "Tool Facebook"
+    },
+    "background": {
+        "persistent": true,
+        "scripts": [
+            "js/lib/jquery.min.js",
+            "js/background.min.js",
+            "js/auto_like_bg.js",
+            "js/background_comment.js",
+            "js/function_gobal.js",
+            "js/background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "js/lib/jquery.min.js",
+                "js/notification.js"
+            ],
+            "css": [
+                "css/lib/animate.css",
+                "css/notification.css"
+            ],
+            "matches": [
+                "*://*/*"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,188 @@
+<div class="header-box">
+    <!-- <div class="header-top d-none">
+        <div class="icon-list">
+            <i class="fas font-18 fa-list-ul text-white"></i>
+        </div>
+        <div class="img">
+            <img src="https://graph.facebook.com/100049921931061/picture?height=500">
+
+        </div>
+    </div> -->
+    <div class="header-text pl-4" style="padding-top:1.8rem;">
+        <h5 class="font-gg text-white"><i class="fas fa-heart mr-2"></i>Tự động tương tác <span
+                class="badge ml-2 font-gg badge-warning font-10 font-gg">Premium</span>
+        </h5>
+        <div class="d-block">
+            <p class="font-gg font-14 d-block pl-4">Tự động tương tác với các bài đăng trên Facebook.</p>
+        </div>
+    </div>
+    <section class="animated fadeIn" id="like_new_feed" style="padding: 5px 12px 0;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="setting_invite_friend">
+                        <div class="setting-reaction">
+                            <div class="form-group">
+                                <h5 class="font-16 font-gg text-white">Thiết lập
+                                </h5>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-14 font-gg" for="">Chọn reaction: <span
+                                        style="color:red">*</span></label>
+                                <br>
+                                <div id="reaction">
+                                    <label><input type="checkbox" class="reaction" checked name="reaction1" value="1">
+                                        <span><img class="icon-reaction"
+                                                src="https://static.xx.fbcdn.net/rsrc.php/v3/yH/r/LH87Z6E9R6k.png?_nc_x=yK3oTlYlA3N"></span></label>
+                                    <label class="ml-3"><input type="checkbox" class="reaction" name="reaction16"
+                                            value="16"> <span><img class="icon-reaction" src="https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/QTVmPoFjk5O.png
+                                                            "></span></label>
+                                    <label class="ml-3"><input type="checkbox" class="reaction" name="reaction2"
+                                            value="2"> <span><img class="icon-reaction"
+                                                src="https://static.xx.fbcdn.net/rsrc.php/v3/yM/r/uwJNoxxjOjw.png?_nc_x=yK3oTlYlA3N"></span></label>
+                                    <label class="ml-3"><input type="checkbox" class="reaction" name="reaction3"
+                                            value="3"> <span><img class="icon-reaction"
+                                                src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/n7ydRDBQhQx.png?_nc_x=yK3oTlYlA3N"></span></label>
+                                    <label class="ml-3"><input type="checkbox" class="reaction" name="reaction4"
+                                            value="4"> <span><img class="icon-reaction"
+                                                src="https://static.xx.fbcdn.net/rsrc.php/v3/y_/r/0j-CFqn6tn2.png?_nc_x=yK3oTlYlA3N"></span></label>
+                                    <label class="ml-3"><input type="checkbox" class="reaction" name="reaction5"
+                                            value="5"> <span><img class="icon-reaction"
+                                                src="https://static.xx.fbcdn.net/rsrc.php/v3/yA/r/8gLxrbu8gc7.png?_nc_x=yK3oTlYlA3N"></span></label>
+                                    <label class="ml-3"><input type="checkbox" class="reaction" name="reaction6"
+                                            value="6"> <span><img class="icon-reaction"
+                                                src="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/II0uCVCHz8X.png?_nc_x=yK3oTlYlA3N"></span></label>
+                                </div>
+                                <p class="font-gg text-justify font-12 mb-0">
+                                    Hệ thống sẻ chọn ngẫu nhiên các reaction bạn chọn.
+                                </p>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-gg font-14" for="">Thời gian giữa 2 lần tương tác</label>
+                                <br>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label class="font-gg font-12" for="">Tối thiểu</label>
+                                            <select id="reactions-time-min" class="font-gg">
+                                                <option value="15">15 giây</option>
+                                                <option value="30">30 giây</option>
+                                                <option value="45">45 giây</option>
+                                                <option value="60">1 phút</option>
+                                                <option value="120">2 phút</option>
+                                                <option value="180">3 phút</option>
+                                                <option value="300">5 phút</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label class="font-gg font-12" for="">Tối đa</label>
+                                            <select id="reactions-time-max" class="font-gg">
+                                                <option value="30">30 giây</option>
+                                                <option value="60">1 phút</option>
+                                                <option value="120">2 phút</option>
+                                                <option value="180">3 phút</option>
+                                                <option value="240">4 phút</option>
+                                                <option value="300">5 phút</option>
+                                                <option value="600">10 phút</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-0">
+                                <p class="font-gg text-warning font-12">Lưu ý: Để cấu hình bạn cần phải tắt chức năng.
+                                </p>
+                            </div>
+
+                            <!-- <div class="form-group">
+                                <label class="font-gg font-14" for="">Chọn định dạng mà bạn muốn tương tác:</label>
+                                <br>
+                                <label class="font-gg font-14" for=""> <input class="mr-2 font-16" type="checkbox"
+                                        name="reaction" value="1"> Chỉ
+                                    tương tác với Fanpge bạn tham gia
+                                </label>
+                                <br>
+                                <label class="font-gg font-14" for=""> <input class="mr-2 font-16" type="checkbox"
+                                        name="reaction" value="1">Chỉ tương tác với bạn bè
+                                </label>
+                            </div> -->
+
+                            <!-- <div class="form-group">
+                                <label class="font-gg font-14" for="">Thời gian ngừng lại</label>
+                                <input class="w-100 form-custom" id="number_reactions" type="number" min="1" max="50"
+                                    placeholder="Số bài viết tương tác ( tối đa 50 bài/lần )">
+                            </div> -->
+
+
+                            <!-- <div class="form-group mb-0">
+                                <button type="button" id="reaction_start"
+                                    class="font-14 font-gg btn m-auto shadow-none btn-primary">Bắt
+                                    đầu</button>
+                                <button type="button" id="reaction_stop"
+                                    class="btn d-none m-auto shadow-none btn-danger">Hủy bỏ</button>
+                            </div> -->
+                            <hr style="background: #ffffff29;width: 50%;height: 1px;">
+                            <div class="form-group text-center">
+                                <label class="cstm-switch">
+                                    <input type="checkbox" name="option" value="1" data-feature="autoReactions"
+                                        id="autoReactions" class="cstm-switch-input system-feature-check">
+                                    <span class="cstm-switch-indicator "></span>
+                                    <span class="cstm-switch-description text-white font-gg font-18"
+                                        lang-vi="Bật tự động tương tác">Bật tự động tương tác</span>
+                                </label>
+                            </div>
+
+                            <p class="font-gg font-14">
+                                <span>Xem lại <a target="top" class="btn-link-facebook text-info" href="">lịch sử</a> hoạt động tương tác của bạn</span> 
+                            </p>
+
+                        </div>
+
+                        <!-- <div class="loading-reaction d-none">
+                            <div class="form-group">
+                                <h5 class="font-16 font-gg">Đang tương tác....</h5>
+                            </div>
+                            <div class="d-flex mb-4 justify-content-center">
+                                <div class="spinner-border text-white" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div>
+                            <div class="progress mb-3 m-auto">
+                                <div id="progress" class="progress-bar progress-bar-striped progress-bar-animated">
+                                </div>
+                            </div>
+                            <div class="form-group mt-4 mb-0">
+                                <button type="button" id="reaction_stop"
+                                    class="font-gg font-14 btn m-auto shadow-none btn-danger">Hủy
+                                    bỏ</button>
+                            </div>
+                        </div> -->
+                    </div>
+                    <!-- <div class="note form-group mt-3 font-12 p-2">
+                        <span style="color:#FFBF00">Lưu ý:</span> Thể hiện cảm xúc đối với bài viết nếu
+                        quá nhiều có thể có nguy cơ bị tấn công trên Facebook vì vậy
+                        hạn chế spam quá nhiều.
+                    </div> -->
+                </div>
+
+                <div class="col-md-4">
+                    <div class="fetch_link">
+                        <h5 class="font-gg text-white font-16">Hỏi & Đáp</h5>
+                        <p class="font-gg font-14 text-warning">Tính năng tự động thả tim là gì?</p>
+                        <p class="font-gg font-14">Khi bạn kích hoạt tính năng, hệ thống sẽ tự tìm bài viết mới nhất của
+                            bạn bè của bạn và tương tác vào (thả tim, like, reaction ...).</p>
+                        <p class="font-gg font-14 text-warning">Bạn có thể chọn nhiều loại reaction?</p>
+                        <p class="font-gg font-14">Khi bạn chọn nhiều loại reaction, hệ thống sẽ lấy ngẫu nhiên 1 loại
+                            để tương tác</p>
+                        <p class="font-gg font-14 text-warning">Thời gian giữa 2 lần tương tác là gì ?</p>
+                        <p class="font-gg font-14">Ví dụ bạn đặt tối thiểu 30s tối đa 60s. Hệ thống sẽ lấy ngẫu nhiên 1 khoảng thời gian cho lần chạy tiếp theo</p>
+                        
+                        <!-- <div id="fetch_table"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
